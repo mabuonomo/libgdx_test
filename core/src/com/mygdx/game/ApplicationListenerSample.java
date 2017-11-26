@@ -13,7 +13,7 @@ import java.util.logging.Level;
 
 public class ApplicationListenerSample implements ApplicationListener {
 
-    private static final String TAG = "ApplicationListernerSample";
+    //private static final String TAG = "ApplicationListernerSample";
     private static final Logger logger = new Logger(ApplicationListener.class.getName(), Logger.DEBUG);
     private boolean renderInterrupt = true;
 
@@ -21,6 +21,14 @@ public class ApplicationListenerSample implements ApplicationListener {
     public void create() {
         Gdx.app.setLogLevel(Application.LOG_DEBUG);
         logger.debug("create()");
+
+        logger.debug("app " + Gdx.app);
+        logger.debug("audio " + Gdx.audio);
+        logger.debug("input " + Gdx.input);
+        logger.debug("files " + Gdx.files);
+        logger.debug("net " + Gdx.net);
+        logger.debug("graphics " + Gdx.graphics);
+
     }
 
     @Override
