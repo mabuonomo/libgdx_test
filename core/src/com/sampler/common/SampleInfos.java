@@ -27,7 +27,7 @@ public class SampleInfos {
     );
 
     public static List<String> getSampleNames() {
-        List<String> ret = new ArrayList<>();
+        List<String> ret = new ArrayList<String>();
 
         for (SampleInfo info : ALL) {
             ret.add(info.getName());
